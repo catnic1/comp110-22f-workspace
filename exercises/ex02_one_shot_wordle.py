@@ -1,5 +1,5 @@
 """EX02 - One - Shot Wordle - Loops!"""
-___author___ = "730328111"
+__author__ = "730328111"
 
 SECRET: str = "python"
 
@@ -16,15 +16,15 @@ i: int = 0
 emoji: str = ""
 while i < len(SECRET):
     if guess[i] == SECRET[i]:
-         emoji = emoji + GREEN_BOX
+        emoji = emoji + GREEN_BOX
     else:
         wrong_place: bool = False
         variable: int = 0 
         while variable < len(SECRET):
             if SECRET[variable] == guess[i]:
                 wrong_place = True 
-            variable  = variable + 1
-        if wrong_place == True:
+            variable = variable + 1
+        if wrong_place is True:
             emoji = emoji + YELLOW_BOX
         else:
             emoji = emoji + WHITE_BOX
