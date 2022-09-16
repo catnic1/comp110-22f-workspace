@@ -19,6 +19,7 @@ WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"  # Variables declared in EX02 
 
+
 def emojified(guess: str, secret: str) -> str:
     """Generates a str to test for yellow or white codification."""
     assert len(guess) == len(secret)  # If this is true, then it will continue on with while loop 
@@ -58,7 +59,7 @@ def main() -> None:
             print(f"You won in {i+1}/6 turns!")
         i += 1 
     if is_one is False:
-        print(f"X/6 - Sorry, try again tomorrow!")
+        print("X/6 - Sorry, try again tomorrow!")
 
 
 if __name__ == "__main__":
