@@ -3,6 +3,7 @@ __author__ = "730328111"
 
 
 def all(numbers: list[int], one_number: int) -> bool:
+    """Return True if all numbers in list match indicated number."""
     if len(numbers) == 0:
         return False 
     
@@ -14,7 +15,8 @@ def all(numbers: list[int], one_number: int) -> bool:
     return True  # return True only if all numbers match the indicated number. 
  
 
-def max(input: list[int]) -> int:   # Return the largest number in the list.
+def max(input: list[int]) -> int:   
+    """Return the largest number in the list."""
     if len(input) == 0:
         raise ValueError("max() arg is an empty List") 
     
@@ -29,7 +31,11 @@ def max(input: list[int]) -> int:   # Return the largest number in the list.
 
 
 def is_equal(digits: list[int], values: list[int]) -> bool: 
+    """Return True if 2 list of integers are equal to each other at each indices."""
     i: int = 0 
+
+    if len(digits) != len(values):
+        return False 
     while i < len(digits): 
         if digits[i] != values[i]: 
             return False 
