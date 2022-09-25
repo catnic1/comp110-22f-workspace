@@ -1,5 +1,6 @@
 """Tests for the sum function."""
 
+import pytest
 
 from lessons.sum import sum 
 
