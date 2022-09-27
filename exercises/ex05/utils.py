@@ -2,12 +2,8 @@
 __author__ = "730328111"
 
 
-from tokenize import endpats
-
-
 def only_evens(numbers: list[int]) -> list[int]:
     """Returns a list of integers, containing only the even elements of the input parameter."""
-
     i: int = 0 
     numbers_1: list[int] = []
     while i < len(numbers):
@@ -19,7 +15,6 @@ def only_evens(numbers: list[int]) -> list[int]:
 
 def concat(input: list[int], input_2: list[int]) -> list[int]:
     """Returns first list, followed by second list."""
-
     input_3: list[int] = []
     for numbers in input:
         input_3.append(numbers)
