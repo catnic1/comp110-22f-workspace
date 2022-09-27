@@ -8,39 +8,46 @@ from utils import concat
 
 
 def test_only_evens_1() -> None:
+    """Returns a list of integers, containing only even elements of the input parameter."""
     numbers: list[int] = []
     assert only_evens(numbers) == [] 
 
 
 def test_only_evens_2() -> None:
+    """Returns a list of integers, containing only even elements of the input parameter."""
     numbers: list[int] = [1, 2, 3, 4]
     assert only_evens(numbers) == [2, 4]
 
 
 def test_only_evens_3() -> None: 
+    """Returns a list of integers, containing only even elements of the input parameter."""
     numbers: list[int] = [1, 8, 10, 12, 14, 16]
     assert only_evens(numbers) == [8, 10, 12, 14, 16]
 
 
 def test_concat_1() -> None:
+    """Returns first list, followed by second list."""
     input: list[int] = []
     input_2: list[int] = []
     assert concat(input, input_2) == []
 
 
 def test_concat_2() -> None:
+    """Returns first list, followed by second list."""
     input: list[int] = [1, 2]
     input_2: list[int] = [2, 1]
     assert concat(input, input_2) == [1, 2, 2, 1]
 
 
 def test_concat_3() -> None:
+    """Returns first list, followed by second list."""
     input: list[int] = [4, 3, 2, 1]
     input_2: list[int] = [6, 7, 8]
     assert concat(input, input_2) == [4, 3, 2, 1, 6, 7, 8]
 
 
 def test_sub_1() -> None:
+    """Returns a list which is a subset of given list between start and end integer."""
     a_list: list[int] = []
     start: int = 0
     end: int = 0
@@ -48,6 +55,7 @@ def test_sub_1() -> None:
 
 
 def test_sub_2() -> None:
+    """Returns a list which is a subset of given list between start and end integer."""
     a_list: list[int] = [10, 20, 30, 40]
     start: int = 1
     end: int = 3
@@ -55,6 +63,7 @@ def test_sub_2() -> None:
 
 
 def test_sub_3() -> None:
+    """Returns a list which is a subset of given list between start and end integer."""
     a_list: list[int] = [10, 15, 20, 25, 30]
     start: int = 1
     end: int = 4
