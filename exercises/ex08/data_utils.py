@@ -7,9 +7,15 @@ from csv import DictReader
 
 def read_csv_rows(filename: str) -> list[dict[str, str]]:
     """Read the rows of a csv into a 'table'."""
+<<<<<<< HEAD
     result: list[dict[str, str]] = []
     
     file_handle = open(filename, "r", encoding="utf8")
+=======
+    result: list[dict[str,str]] = []
+    
+    file_handle = open(filename, "r", encoding = "utf8")
+>>>>>>> c7b5856 (Progress on Exercise 8)
      
     csv_reader = DictReader(file_handle) 
 
@@ -21,7 +27,11 @@ def read_csv_rows(filename: str) -> list[dict[str, str]]:
     return result
 
 
+<<<<<<< HEAD
 def column_values(table: list[dict[str, str]], column: str) -> list[str]:
+=======
+def column_values(table: list[dict[str,str]], column: str) -> list[str]:
+>>>>>>> c7b5856 (Progress on Exercise 8)
     """Produce a list[str] of all values in a single column."""
     result: list[str] = []
     for row in table: 
@@ -31,7 +41,11 @@ def column_values(table: list[dict[str, str]], column: str) -> list[str]:
     return result
 
 
+<<<<<<< HEAD
 def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
+=======
+def columnar(row_table: list[dict[str,str]]) -> dict[str, list[str]]:
+>>>>>>> c7b5856 (Progress on Exercise 8)
     """Transform a row-oriented table to a columb-oriented table."""
     result: dict[str, list[str]] = {}
     first_row: dict[str, str] = row_table[0]
@@ -41,7 +55,11 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
     return result
 
 
+<<<<<<< HEAD
 def head(N: dict[str, list[str]], number: int) -> dict[str, list[str]]:
+=======
+def head(N :dict[str, list[str]], number: int) -> dict[str, list[str]]:
+>>>>>>> c7b5856 (Progress on Exercise 8)
     """Produce a column-based table with only the first rows of data for each column."""
     result: dict[str, list[str]] = {}
     for column in N:
